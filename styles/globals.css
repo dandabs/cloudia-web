@@ -87,7 +87,8 @@ header {
 }
 
 #content {
-    min-height: 100vh;
+    min-height: calc(100vh - 88px);
+    margin-top: 88px !important;
 }
 
 table {
@@ -144,11 +145,6 @@ td {
 
 /* sidebar */
 
-
-body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
   
   html {
     height: -webkit-fill-available;

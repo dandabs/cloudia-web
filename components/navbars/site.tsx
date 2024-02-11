@@ -9,59 +9,17 @@ import { BiSolidChevronDown } from "react-icons/bi";
 
 import Typewriter from 'typewriter-effect';
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
-const types : {
-    [key: string]: {
-        color: string,
-        description: string,
-        url: string,
-        titles: string[]
-    }
-} = {
-    gov: {
-        color: "#271536",
-        url: "https://govoffice.cc",
-        description: "Official website of the CloudCraft government.",
-        titles: [
-            'CloudCraft Government Office', // English
-            'Piilve Statsmitoimist', // Cloudic (Latin)
-            'Пиилвэ Статсмитоимист', // Cloudic (Cyrillic)
-            'CloudCraftin hallitus', // Finnish
-            'CloudCraft-regjeringen', // Norwegian
-            'CloudCraft ríkisstjórn', // Icelandic
-            'CloudCraftap naalagaassuseqa',
-            'CloudCraftaid Ráđđehus', // Northern Sámi
-            'CloudCraftin abuniekkut', // Karelian
-            'CloudCrafti valitsus', // Estonian
-            'Oficina Gubernamental de CloudCraft', // Spanish
-            'Escritório do Governo da CloudCraft', // Portugese
-            'Oifig Rialtais CloudCraft', // Irish Gaelic
-        ]
-    }
-}
-
 export default function SiteNavbar({
-    type
+    color,
+    titles
   }: {
-    type: string
+    color: string,
+    titles: string[]
   }) {
     return (
         <>
-        <Head>
-
-        <meta property="og:title" content={types[type].titles[0]} />
-        <meta property="og:url" content={types[type].url} />
-        <meta property="og:image" content="https://govoffice.cc/img/2022-02-05_12.44.06.png" />
-        <meta property="og:description" content={types[type].description} />
-        <meta name="theme-color" content={types[type].color} />
-
-        <title>d • ПСТ</title>
-      </Head>
       <Disclosure as="nav" style={{
-            backgroundColor: types[type].color
+            backgroundColor: color
         }}>
         {({ open }) => (
           <>
@@ -92,7 +50,7 @@ export default function SiteNavbar({
                     <Link href="/" className="text-lg text-white border-none">
                         <Typewriter
                             options={{
-                                strings: types[type].titles,
+                                strings: titles,
                                 autoStart: true,
                                 loop: true,
                             }}

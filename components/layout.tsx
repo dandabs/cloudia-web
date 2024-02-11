@@ -7,35 +7,78 @@ import { Fragment } from "react";
 import { BiSolidChevronDown } from "react-icons/bi";
 import GlobalNavbar from "./navbars/global";
 import SiteNavbar from "./navbars/site";
+import Head from "next/head";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
+const types : {
+  [key: string]: {
+      color: string,
+      description: string,
+      url: string,
+      titles: string[]
+  }
+} = {
+  gov: {
+      color: "#271536",
+      url: "https://govoffice.cc",
+      description: "Official website of the CloudCraft government.",
+      titles: [
+          'CloudCraft Government Office', // English
+          'Piilve Statsmitoimist', // Cloudic (Latin)
+          'Пиилвэ Статсмитоимист', // Cloudic (Cyrillic)
+          'CloudCraftin hallitus', // Finnish
+          'CloudCraft-regjeringen', // Norwegian
+          'CloudCraft ríkisstjórn', // Icelandic
+          'CloudCraftap naalagaassuseqa',
+          'CloudCraftaid Ráđđehus', // Northern Sámi
+          'CloudCraftin abuniekkut', // Karelian
+          'CloudCrafti valitsus', // Estonian
+          'Oficina Gubernamental de CloudCraft', // Spanish
+          'Escritório do Governo da CloudCraft', // Portugese
+          'Oifig Rialtais CloudCraft', // Irish Gaelic
+      ]
+  }
 }
 
 export default function Layout({
-    children
+    children,
+    title,
+    type
   }: {
-    children: React.ReactNode
+    children: React.ReactNode,
+    title: string,
+    type: string
   }) {
     return (
       <>
+      <Head>
+
+        <meta property="og:title" content={title + "• ПСТ"} />
+        <meta property="og:url" content={types[type].url} />
+        <meta property="og:image" content="https://govoffice.cc/img/2022-02-05_12.44.06.png" />
+        <meta property="og:description" content={types[type].description} />
+        <meta name="theme-color" content={types[type].color} />
+
+        <title>{title} • ПСТ</title>
+        </Head>
           <header>
 
           <GlobalNavbar />
-          <SiteNavbar type="gov" />
+          <SiteNavbar color={types[type].color} titles={types[type].titles} />
 
         </header>
 
-        <div id="content" className="container">
+        <div id="content">
 
         {children}
 
         </div>
 
-    <footer className="footer mt-auto py-3 bg-light">
-        <div className="container">
-            <span className="text-muted"><em>&copy; 2014-2022 CloudCraft. All rights reserved.</em></span><br />
-            <span className="text-muted"><em>Developed by <a href="https://dandabs.fi">Otto Koskinen</a>.</em></span>
+    <footer className="footer mt-auto py-3" style={{
+      backgroundColor: types[type].color,
+      color: "white"
+    }}>
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <span className="text-xs"><em>&copy; 2014-2024 CloudCraft. All rights reserved.</em> <em>Developed by <a href="https://dandabs.fi" className="border-none">Daniel Adams</a>.</em></span>
         </div>
     </footer>
 

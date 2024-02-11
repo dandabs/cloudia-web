@@ -6,10 +6,6 @@ import { Fragment } from "react";
 
 import { BiSolidChevronDown } from "react-icons/bi";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function GlobalNavbar() {
     return (
         <Disclosure as="nav" className="bg-white">
