@@ -52,20 +52,41 @@ export default function Layout({
       <>
       <Head>
 
-        <meta property="og:title" content={title + "• ПСТ"} />
-        <meta property="og:url" content={types[type].url} />
-        <meta property="og:image" content="https://govoffice.cc/img/2022-02-05_12.44.06.png" />
-        <meta property="og:description" content={types[type].description} />
-        <meta name="theme-color" content={types[type].color} />
+        { type != "none" ?
+        <>
+          <meta property="og:title" content={title + "• ПСТ"} />
+          <meta property="og:url" content={types[type].url} />
+          <meta property="og:image" content="https://govoffice.cc/img/2022-02-05_12.44.06.png" />
+          <meta property="og:description" content={types[type].description} />
+          <meta name="theme-color" content={types[type].color} />
+        </>
+
+        :
+        <>
+          <meta property="og:title" content={title + "• Cloudia"} />
+          <meta property="og:url" content={"https://cloudia.is"} />
+          <meta property="og:image" content="https://govoffice.cc/img/2022-02-05_12.44.06.png" />
+          <meta property="og:description" content={""} />
+          <meta name="theme-color" content={"#000000"} />
+        </>
+  }
 
         <title>{title} • ПСТ</title>
         </Head>
+        
           <header>
 
-          <GlobalNavbar />
-          <SiteNavbar color={types[type].color} titles={types[type].titles} />
+            
+            <>
+            <GlobalNavbar />
+            { type != "none" ?
+            <SiteNavbar color={types[type].color} titles={types[type].titles} />
+            : null }
+            </>
+          
 
         </header>
+        
 
         <div id="content">
 
@@ -74,7 +95,7 @@ export default function Layout({
         </div>
 
     <footer className="footer mt-auto py-3" style={{
-      backgroundColor: types[type].color,
+      backgroundColor: type!="none" ? types[type].color : "#000000",
       color: "white"
     }}>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
