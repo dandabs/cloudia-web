@@ -7,115 +7,332 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <Layout>
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      {/* BEGIN: ed8c6549bwf9 */}
+      <div id="content">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener("DOMContentLoaded", function() {
+                var con = document.getElementById("content");
+                con.style.marginRight = "unset";
+                con.style.marginLeft = "unset";
+              });
+            `,
+          }}
+        ></script>
+
+        <div className="container" id="stretch" style={{ marginTop: "-50px" }}>
+          <div className="row">
+            <div className="col-12">
+              <div className="card box1" style={{ height: "80vh" }} id="hero">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-6 d-none d-lg-block">
+                      <Image
+                        src="/img/body.png"
+                        id="presoutline"
+                        className="d-none d-lg-block"
+                        width={500}
+                        height={500}
+                      />
+                    </div>
+                    <div className="col-lg-6 col-sm-12">
+                      <div className="card-body-2" style={{ zIndex: 300 }}>
+                        <div>
+                          <Image
+                            src="/img/CG.png"
+                            style={{ width: "50%" }}
+                            width={500}
+                            height={500}
+                          />
+                          <h1 style={{ fontSize: "calc(1.475rem + 1.5vw)" }}>
+                            <strong>A new government.</strong>
+                          </h1>
+                          <p style={{ fontSize: "1.2rem" }}>
+                            Proudly flying the Icelandic flag since 1.7.2022.
+                            <br />
+                            Currently under the office of the 6th President.
+                          </p>
+                          <button
+                            type="button"
+                            className="btn btn-outline-light"
+                            onClick={() =>
+                              (window.location.href = "/government/how-government-works")
+                            }
+                          >
+                            How does it work? --&gt;
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-lg-6 col-sm-12">
+              <div className="card box2" style={{ height: "40vh" }} id="hero">
+                <div className="card-body container" style={{ zIndex: 300 }}>
+                  <div>
+                    <h1 style={{ fontSize: "calc(1.475rem + 1.5vw)" }}>
+                      <strong>Decisions.</strong>
+                    </h1>
+                    <p style={{ fontSize: "1.2rem" }}>
+                      Learn what it's like behind the scenes of the Cloudic Government,
+                      <br />
+                      and see how they come together to make your experience phenomenal.
+                    </p>
+                    <button
+                      type="button"
+                      className="btn btn-outline-light"
+                      onClick={() =>
+                        (window.location.href = "/government/behind-the-scenes")
+                      }
+                    >
+                      Learn more --&gt;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-sm-12">
+              <div className="card box3" style={{ height: "40vh" }} id="hero">
+                <div className="card-body container" style={{ zIndex: 300 }}>
+                  <div>
+                    <h1 style={{ fontSize: "calc(1.475rem + 1.5vw)" }}>
+                      <strong>Getting on top.</strong>
+                    </h1>
+                    <p style={{ fontSize: "1.2rem" }}>
+                      View results from previous presidential elections,
+                      <br />
+                      and figure out how you could be making the decisions next.
+                    </p>
+                    <button
+                      type="button"
+                      className="btn btn-outline-light"
+                      onClick={() => (window.location.href = "/government/elections")}
+                    >
+                      Run for president --&gt;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12">
+              <div className="card box4" style={{ height: "80vh" }} id="hero" data-aos="fade-up">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-6 col-sm-12">
+                      <div className="card-body-2" style={{ zIndex: 300 }}>
+                        <div>
+                          <Image
+                            src="/img/DoE.png"
+                            style={{ width: "50%" }}
+                            width={500}
+                            height={500}
+                          />
+                          <h1 style={{ fontSize: "calc(1.475rem + 1.5vw)" }}>
+                            <strong>Changes that matter.</strong>
+                          </h1>
+                          <p style={{ fontSize: "1.2rem" }}>
+                            The 3rd Overseer Cabient of the Nordic Era.
+                            <br />
+                            Developing the future of CloudCraft since 12.10.2021.
+                          </p>
+                          <button
+                            type="button"
+                            className="btn btn-outline-light"
+                            onClick={() =>
+                              (window.location.href = "/government/who-represents-me")
+                            }
+                          >
+                            Meet the Overseers --&gt;
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-6 d-none d-lg-block">
+                      <Image
+                        src="/img/body-14.png"
+                        id="execoutline"
+                        width={500}
+                        height={500}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-lg-6 col-sm-12">
+              <div className="card box5" style={{ height: "40vh" }} id="hero" data-aos="fade-up">
+                <div className="card-body container" style={{ zIndex: 300 }}>
+                  <div>
+                    <h1 style={{ fontSize: "calc(1.475rem + 1.5vw)" }}>
+                      <strong>&gt; ssh root@10.0.10.2</strong>
+                    </h1>
+                    <p style={{ fontSize: "1.2rem" }}>
+                      Get an insight to the astonishing development of CloudCraft,
+                      <br />
+                      and take a peek at what we're working on next.
+                    </p>
+                    <button type="button" className="btn btn-outline-light">
+                      Learn more --&gt;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-sm-12">
+              <div className="card box6" style={{ height: "40vh" }} id="hero" data-aos="fade-up">
+                <div className="card-body container" style={{ zIndex: 300 }}>
+                  <div>
+                    <h1 style={{ fontSize: "calc(1.475rem + 1.5vw)" }}>
+                      <strong>Events.</strong>
+                    </h1>
+                    <p style={{ fontSize: "1.2rem" }}>
+                      Learn what it's like to be behind an event on the server,
+                      <br />
+                      from planning, to building, to the final execution.
+                    </p>
+                    <button type="button" className="btn btn-outline-light">
+                      Learn more --&gt;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+        <link
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet"
         />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              AOS.init();
+            `,
+          }}
+        ></script>
+
+        <style jsx>{`
+          #presoutline {
+            /*position: absolute;
+            top: 23%;
+            left:10%;  */
+            height: 80vh;
+            z-index: 300;
+            position: relative;
+          }
+          #execoutline {
+            /*position: absolute;
+            top: 23%;
+            left:10%;  */
+            height: 80vh;
+            z-index: 300;
+            position: relative;
+          }
+
+          .box1 {
+            background: url('/img/2022-02-24_23.23.58.png') center center;
+            background-size: cover;
+          }
+          .box2 {
+            background: url('/img/2021-12-10_18.46.31.png') center center;
+            background-size: cover;
+          }
+          .box3 {
+            background: url('/img/2021-06-05_00.35.28.png') center center;
+            background-size: cover;
+          }
+
+          .box4 {
+            background: url('/img/2022-02-05_12.49.08.png') center center;
+            background-size: cover;
+          }
+          .box5 {
+            background: url('/img/2021-05-08_18.44.46.png') center center;
+            background-size: cover;
+          }
+          .box6 {
+            background: url('/img/2021-08-07_17.49.28.png') center center;
+          }
+
+          #content {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+          }
+          #stretch {
+            width: 100vw;
+            max-width: unset !important;
+            left: 0.5%;
+            padding-right: calc(.77rem * 2);
+            padding-left: calc(.77rem * 2);
+          }
+          .card-body {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+          }
+          .card-body-2 {
+            text-align: center;
+            color: white;
+            -ms-transform: translateY(-50%);
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          .card-body-3 {
+            text-align: center;
+            color: white;
+            -ms-transform: translateY(-50%);
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          #hero {
+            width: 100%;
+          }
+          #hero:before {
+            content: "";
+            display: block;
+            position: absolute; /* could also be absolute */
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+          }
+          #hero:after {
+            content: "";
+            display: block;
+            position: absolute; /* could also be absolute */
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.55);
+          }
+        `}</style>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      {/* END: ed8c6549bwf9 */}
     </Layout>
   );
 }
