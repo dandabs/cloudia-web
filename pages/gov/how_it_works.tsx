@@ -14,7 +14,7 @@ export default function Home() {
         <div className="col-md-8 col-sm-12">
 
             <h1>How government works</h1>
-            <p className="larger">On CloudCraft, the President leads the government with the support of the Cabinet and other ministers of departments.
+            <p className="larger">On Cloudia, the President leads the government with the support of the Cabinet and other ministers of departments.
                 The President and Cabinet regularly meet at the presidential mansion to discuss the latest news on the server, player
                 suggestions, and other potential ideas to improve the server.
             </p>
@@ -27,7 +27,7 @@ export default function Home() {
 
             <h2>Who runs government?</h2>
             <h3>The President</h3>
-            <p>The President of CloudCraft is the leader of the Cloudic Government, and is exclusively responsible for all decisions made and
+            <p>The President of Cloudia is the leader of the Cloudic Government, and is exclusively responsible for all decisions made and
                 changes implemented to the server's lore, gameplay or law.
             </p>
             <p>Additional jobs taken up by the President include:</p>
@@ -40,7 +40,7 @@ export default function Home() {
             <img className="body" src="/img/2021-06-03_16.32.102.png" style={{ width: "80%" }} />
 
             <h3>The Cabinet</h3>
-            <p>The Cabinet of CloudCraft are the most powerful members of the Government, second only to the president themselves. They make up the
+            <p>The Cabinet of Cloudia are the most powerful members of the Government, second only to the president themselves. They make up the
                 decision-making body present at meetings, and vote on popular suggestions and issues which arise.
             </p>
             <p>The Cloudic Cabinet usually consists of 5 players, chosen individually by the President – these are usually the most active or dedicated
@@ -51,7 +51,7 @@ export default function Home() {
             <div className="line-x"></div>
 
             <h2>What are the departments?</h2>
-            <p>The Departments of Government on CloudCraft are smaller groups of players who report to the government and President. These departments
+            <p>The Departments of Government on Cloudia are smaller groups of players who report to the government and President. These departments
                 each have one key topic or purpose, which make delegation of larger tasks easier to manage and track.
             </p>
 
@@ -80,7 +80,7 @@ export default function Home() {
                         <img src="/img/DfI.png" style={{ width: "100%" }} />
                     </td>
                     <td>The Department for Infrastructure is responsible for the planning and implementation of builds to benefit the player experience on
-                                    CloudCraft. Some examples include, but are not limited to: the Spawn, special event areas, public warps, and the annual redevelopment
+                                    Cloudia. Some examples include, but are not limited to: the Spawn, special event areas, public warps, and the annual redevelopment
                                     of Shokō Arena.
                     </td>
                     <td>T.B.A</td>
@@ -91,7 +91,7 @@ export default function Home() {
                         <img src="/img/DoP.png" style={{ width: "100%" }} />
                     </td>
                     <td>The Department of the Public is responsible for everything to do with inter-government communication with players. This includes passing
-                                    on suggestions, issues, and reports, as well as ensuring positive publicity, player experiences and feedback for CloudCraft as a whole.
+                                    on suggestions, issues, and reports, as well as ensuring positive publicity, player experiences and feedback for Cloudia as a whole.
                     </td>
                     <td>Lowelo45</td>
                 </tr>
@@ -111,7 +111,7 @@ export default function Home() {
                     <td width="30%;">
                         <img src="/img/ICL.png" style={{ width: "100%" }} />
                     </td>
-                    <td>The Institute of the Cloudic Language (Insti'üüt að Piilvea Kie) is responsible for the regulation and protection of CloudCraft's official
+                    <td>The Institute of the Cloudic Language (Insti'üüt að Piilvea Kie) is responsible for the regulation and protection of Cloudia's official
                                     language. Throughout the year, it is tasked with the upkeeping of translation services, as well as ensuring the language is used appropriately
                                     and sufficiently in official productions.
                     </td>

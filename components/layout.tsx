@@ -22,21 +22,21 @@ const types : {
   gov: {
       color: "#271536",
       url: "https://cloudia.is/gov",
-      description: "Official website of the CloudCraft government.",
+      description: "Official website of the Cloudia government.",
       titles: [
-          'CloudCraft Government Office', // English
+          'Cloudia Government Office', // English
           'Piilve Statsmitoimist', // Cloudic (Latin)
           'Пиилвэ Статсмитоимист', // Cloudic (Cyrillic)
-          'CloudCraftin hallitus', // Finnish
-          'CloudCraft-regjeringen', // Norwegian
-          'CloudCraft ríkisstjórn', // Icelandic
-          'CloudCraftap naalagaassuseqa',
-          'CloudCraftaid Ráđđehus', // Northern Sámi
-          'CloudCraftin abuniekkut', // Karelian
-          'CloudCrafti valitsus', // Estonian
-          'Oficina Gubernamental de CloudCraft', // Spanish
-          'Escritório do Governo da CloudCraft', // Portugese
-          'Oifig Rialtais CloudCraft', // Irish Gaelic
+          'Cloudiain hallitus', // Finnish
+          'Cloudia-regjeringen', // Norwegian
+          'Cloudia ríkisstjórn', // Icelandic
+          'Cloudiaap naalagaassuseqa',
+          'Cloudiaaid Ráđđehus', // Northern Sámi
+          'Cloudiain abuniekkut', // Karelian
+          'Cloudiai valitsus', // Estonian
+          'Oficina Gubernamental de Cloudia', // Spanish
+          'Escritório do Governo da Cloudia', // Portugese
+          'Oifig Rialtais Cloudia', // Irish Gaelic
       ]
   },
   dfc: {
@@ -141,7 +141,7 @@ export default function Layout({
       color: "white"
     }}>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <span className="text-xs"><em>&copy; 2014-2024 CloudCraft. All rights reserved.</em> <em>Developed by <a href="https://dandabs.fi" className="border-none hover:underline">Daniel Adams</a>.</em></span>
+            <span className="text-xs"><em>&copy; 2014-2024 Cloudia. All rights reserved.</em> <em>Developed by <a href="https://dandabs.fi" className="border-none hover:underline">Daniel Adams</a>.</em></span>
         </div>
     </footer>
 
