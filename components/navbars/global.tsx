@@ -44,7 +44,7 @@ export default function GlobalNavbar() {
                         <Link href="https://translate.cloudcraft.fi"
                           
                           className={
-                              "border-none"
+                              "border-none hover:underline"
                           }
                         >
                           Translator
@@ -52,7 +52,7 @@ export default function GlobalNavbar() {
 
                       <Link href="https://aao.govoffice.cc"
                           className={
-                            "border-none"
+                            "border-none hover:underline"
                         }
                         >
                           ÁAO22
@@ -62,7 +62,7 @@ export default function GlobalNavbar() {
                           user ?
                           <Link href="/api/auth/logout"
                           className={
-                            "border-none"
+                            "border-none hover:underline"
                         }
                         >
                           Sign out

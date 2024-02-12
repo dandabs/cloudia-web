@@ -101,7 +101,7 @@ export default function Layout({
       color: "white"
     }}>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <span className="text-xs"><em>&copy; 2014-2024 CloudCraft. All rights reserved.</em> <em>Developed by <a href="https://dandabs.fi" className="border-none">Daniel Adams</a>.</em></span>
+            <span className="text-xs"><em>&copy; 2014-2024 CloudCraft. All rights reserved.</em> <em>Developed by <a href="https://dandabs.fi" className="border-none hover:underline">Daniel Adams</a>.</em></span>
         </div>
     </footer>
 
