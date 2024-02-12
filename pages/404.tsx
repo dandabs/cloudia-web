@@ -10,7 +10,7 @@ export default function Home() {
     <Layout type={"none"} title={"404"}>
         <div className="relative" style={{
           width: "100vw",
-          height: "calc(100vh - 24px - 48px)",
+          height: "calc(100vh - 24px - 32px)",
           overflow: "hidden"
         }}>
           <div className="h-full w-full absolute" style={{

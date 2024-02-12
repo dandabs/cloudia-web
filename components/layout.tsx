@@ -96,7 +96,7 @@ export default function Layout({
 
         </div>
 
-    <footer className="footer mt-auto py-3" style={{
+    <footer className="footer mt-auto py-1" style={{
       backgroundColor: type!="none" ? types[type].color : "#000000",
       color: "white"
     }}>
@@ -110,7 +110,7 @@ export default function Layout({
     <script src="/cdn/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossOrigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/js/core.js"></script>
-
+ 
     </UserProvider>
     )
   }
