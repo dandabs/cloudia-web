@@ -6,7 +6,11 @@ import { Fragment } from "react";
 
 import { BiSolidChevronDown } from "react-icons/bi";
 
+import { useUser } from '@auth0/nextjs-auth0/client';
+
 export default function GlobalNavbar() {
+    const { user, error, isLoading } = useUser();
+
     return (
         <Disclosure as="nav" className="bg-white">
         {({ open }) => (
@@ -53,6 +57,25 @@ export default function GlobalNavbar() {
                         >
                           ÁAO22
                         </Link>
+
+                        {
+                          user ?
+                          <Link href="/api/auth/logout"
+                          className={
+                            "border-none"
+                        }
+                        >
+                          Sign out
+                        </Link>
+                        :
+                        <Link href="/api/auth/login"
+                          className={
+                            "border-none"
+                        }
+                        >
+                          Sign in
+                        </Link>
+                        }
 
                     </div>
                   </div>

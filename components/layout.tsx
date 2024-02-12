@@ -9,6 +9,8 @@ import GlobalNavbar from "./navbars/global";
 import SiteNavbar from "./navbars/site";
 import Head from "next/head";
 
+import { UserProvider } from '@auth0/nextjs-auth0/client';
+
 const types : {
   [key: string]: {
       color: string,
@@ -49,7 +51,7 @@ export default function Layout({
     type: string
   }) {
     return (
-      <>
+      <UserProvider>
       <Head>
 
         { type != "none" ?
@@ -109,6 +111,6 @@ export default function Layout({
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/js/core.js"></script>
 
-      </>
+    </UserProvider>
     )
   }
