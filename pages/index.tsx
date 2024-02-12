@@ -54,7 +54,7 @@ export default function Home() {
             <div className="text-white flex flex-col justify-center gap-8 absolute left-0 p-5">
 
               <div className="flex flex-col justify-center items-center">
-                <Link href="" className="border-none hover:opacity-70 opacity-90 justify-center items-center flex flex-col">
+                <Link href="/map" className="border-none hover:opacity-70 opacity-90 justify-center items-center flex flex-col">
                 <Image
                   src="/img/heads/globe.png"
                   alt="Globe head"
@@ -93,7 +93,7 @@ export default function Home() {
             <div className="text-white flex flex-col justify-center gap-8 absolute right-0 p-5">
 
               <div className="flex flex-col justify-center items-center">
-                <Link href="" className="border-none hover:opacity-70 opacity-90">
+                <Link href="/language" className="border-none hover:opacity-70 opacity-90">
                 <Image
                   src="/img/heads/books.png"
                   alt="Books head"
@@ -105,7 +105,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col justify-center items-center">
-                <Link href="" className="border-none hover:opacity-70 opacity-90">
+                <Link href="/ceremony" className="border-none hover:opacity-70 opacity-90">
                 <Image
                   src="/img/heads/tv.png"
                   alt="PC head"
@@ -129,7 +129,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col justify-center items-center">
-                <Link href="" className="border-none hover:opacity-70 opacity-90 justify-center items-center flex flex-col">
+                <Link href="/afp" className="border-none hover:opacity-70 opacity-90 justify-center items-center flex flex-col">
                 <Image
                   src="/img/heads/echest.png"
                   alt="Ender Chest head"

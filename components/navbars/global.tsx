@@ -41,21 +41,47 @@ export default function GlobalNavbar() {
                   </div>
                   <div className="hidden sm:block sm:ml-6 sm:justify-self-end flex-grow">
                     <div className="flex space-x-4 justify-end items-center text-xs text-neutral-500">
-                        <Link href="https://translate.cloudcraft.fi"
+                      <Link href="/gov"
                           
                           className={
                               "border-none hover:underline"
                           }
                         >
-                          Translator
+                          Government
                         </Link>
 
-                      <Link href="https://aao.govoffice.cc"
+                        <Link href="/server"
+                          
+                          className={
+                              "border-none hover:underline"
+                          }
+                        >
+                          Server
+                        </Link>
+                        
+                        <Link href="/language"
+                          
+                          className={
+                              "border-none hover:underline"
+                          }
+                        >
+                          Language
+                        </Link>
+
+                      <Link href="/ceremony"
                           className={
                             "border-none hover:underline"
                         }
                         >
-                          ÁAO22
+                          Ceremony
+                        </Link>
+
+                        <Link href="/preservation"
+                          className={
+                            "border-none hover:underline"
+                        }
+                        >
+                          Preservation
                         </Link>
 
                         {

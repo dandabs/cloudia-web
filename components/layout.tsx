@@ -21,7 +21,7 @@ const types : {
 } = {
   gov: {
       color: "#271536",
-      url: "https://govoffice.cc",
+      url: "https://cloudia.is/gov",
       description: "Official website of the CloudCraft government.",
       titles: [
           'CloudCraft Government Office', // English
@@ -38,9 +38,49 @@ const types : {
           'Escritório do Governo da CloudCraft', // Portugese
           'Oifig Rialtais CloudCraft', // Irish Gaelic
       ]
+  },
+  dfc: {
+    color: "#a76700",
+      url: "https://cloudia.is/ceremony",
+      description: "Official website of the Cloudic Department for the Ceremony.",
+      titles: [
+          'Department for the Ceremony', // English
+      ]
+  },
+  dfs: {
+    color: "#4C7F99",
+      url: "https://cloudia.is/server",
+      description: "Official website of the Cloudic Department for the Server.",
+      titles: [
+          'Department for the Server', // English
+      ]
+  },
+  dfp: {
+    color: "#a00058",
+      url: "https://cloudia.is/preservation",
+      description: "Official website of the Cloudic Vault and Department for Preservation.",
+      titles: [
+          'Department for Preservation', // English
+      ]
+  },
+  icl: {
+    color: "#277926",
+      url: "https://cloudia.is/language",
+      description: "Official website of the Institute for the Cloudic Language.",
+      titles: [
+        'Institute for the Cloudic Language', // English
+        'Institüüt að Pilvea Kie', // Cloudic (Latin)
+        'Институт аж Пилвэа Щиэ', // Cloudic (Cyrillic)
+        'Pilvikielen sääntelylaitos', // Finnish
+        'Skyspråkreguleringsinstitusjon', // Norwegian
+        'Skýjamálaeftirlitsstofnun', // Icelandic
+        'Pilvekeele Reguleerimise Asutus', // Estonian
+        'Institución de Regulación del Lenguaje de la Nube', // Spanish
+        'Instituição Reguladora de Idiomas de Nuvem', // Portugese
+        'Institiúid Rialála Teanga Scamall', // Irish Gaelic
+      ]
   }
 }
-
 export default function Layout({
     children,
     title,
@@ -89,7 +129,7 @@ export default function Layout({
         </header>
         
         <div id="content" style={{
-          marginTop: "24px"
+          marginTop: type == "none" ? "24px" : "88px"
         }}>
 
         {children}

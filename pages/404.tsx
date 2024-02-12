@@ -18,7 +18,7 @@ export default function Home() {
             backgroundImage: "url('/img/2021-08-07_17.50.32.png')",
             backgroundPosition: "center center",
             backgroundSize: "cover",
-            transform: "scale(1.2)",
+            transform: "scale(1.1)",
           }} />
           <div className="h-full w-full absolute flex p-5 items-center justify-center">
             <div className="text-white flex flex-col justify-center items-center">
