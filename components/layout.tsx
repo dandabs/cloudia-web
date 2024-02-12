@@ -84,11 +84,11 @@ export default function Layout({
             : null }
             </>
           
-
         </header>
         
-
-        <div id="content">
+        <div id="content" style={{
+          marginTop: "24px"
+        }}>
 
         {children}
 

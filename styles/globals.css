@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  overflow-x: hidden;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -88,7 +89,7 @@ header {
 
 #content {
     min-height: calc(100vh - 88px);
-    margin-top: 88px !important;
+    margin-top: 88px;
 }
 
 table {
