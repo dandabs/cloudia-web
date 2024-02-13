@@ -129,7 +129,8 @@ export default function Layout({
         </header>
         
         <div id="content" style={{
-          marginTop: type == "none" ? "24px" : "88px"
+          marginTop: type == "none" ? "24px" : "88px",
+          minHeight: type == "none" ? "calc(100vh - 88px)" : "calc(100vh - 88px - 32px)"
         }}>
 
         {children}

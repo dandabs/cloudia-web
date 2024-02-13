@@ -117,7 +117,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col justify-center items-center">
-                <Link href="" className="border-none hover:opacity-70 opacity-90">
+                <Link href="/gov/programs" className="border-none hover:opacity-70 opacity-90">
                 <Image
                   src="/img/heads/form.png"
                   alt="Form head"
