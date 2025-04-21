@@ -1,40 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Monorepo Template
 
-## Getting Started
+A template to create a monorepo SST ❍ Ion project.
 
-First, run the development server:
+## Get started
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Use this template to [create your own repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Clone the new repo.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+    ```bash
+    git clone MY_APP
+    cd MY_APP
+    ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Rename the files in the project to the name of your app.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    ```bash
+    npx replace-in-file '/cloudcraft/g' MY_APP **/*.* --verbose
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Deploy!
 
-## Learn More
+    ```bash
+    npm install
+    npx sst deploy
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+5. Optionally, enable [_git push to deploy_](https://ion.sst.dev/docs/console/#autodeploy).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This template uses [npm Workspaces](https://docs.npmjs.com/cli/v8/using-npm/workspaces). It has 3 packages to start with and you can add more it.
 
-## Deploy on Vercel
+1. `core/`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    This is for any shared code. It's defined as modules. For example, there's the `Example` module.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    ```ts
+    export module Example {
+    	export function hello() {
+    		return "Hello, world!";
+    	}
+    }
+    ```
+
+    That you can use across other packages using.
+
+    ```ts
+    import { Example } from "@aws-monorepo/core/example";
+
+    Example.hello();
+    ```
+
+2. `functions/`
+
+    This is for your Lambda functions and it uses the `core` package as a local dependency.
+
+3. `scripts/`
+
+    This is for any scripts that you can run on your SST app using the `sst shell` CLI and [`tsx`](https://www.npmjs.com/package/tsx). For example, you can run the example script using:
+
+    ```bash
+    npm run shell src/example.ts
+    ```
+
+### Infrastructure
+
+The `infra/` directory allows you to logically split the infrastructure of your app into separate files. This can be helpful as your app grows.
+
+In the template, we have an `api.ts`, and `storage.ts`. These export the created resources. And are imported in the `sst.config.ts`.
+
+---
+
+Join the SST community over on [Discord](https://discord.gg/sst) and follow us on [Twitter](https://twitter.com/SST_dev).

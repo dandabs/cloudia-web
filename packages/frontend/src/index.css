@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+select.form-control,
+textarea.form-control,
+input.form-control {
+	font-size: 1rem;
+}
+input[type="file"] {
+	width: 100%;
+}
+
+@font-face {
+	font-family: 'Minecraft';
+	src: url('/fonts/MinecraftRegular-Bmg3.otf') format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Minecraft';
+	src: url('/fonts/MinecraftBold-nMK1.otf') format('opentype');
+	font-weight: bolder;
+}
